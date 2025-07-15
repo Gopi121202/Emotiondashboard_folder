@@ -9,7 +9,7 @@ from tensorflow.keras.models import load_model
 import joblib
 
 # Load model
-model = joblib.load ("/model/model.keras")
+model = joblib.load ("model.keras")
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
 # Ensure folders
