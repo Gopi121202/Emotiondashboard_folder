@@ -8,7 +8,7 @@ import pandas as pd
 from tensorflow.keras.models import load_model
 
 # Load model and labels
-model = load_model("model/model.keras")
+model = load_model("model.keras")
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
 # Ensure required folders exist
