@@ -6,9 +6,10 @@ from datetime import datetime
 import os
 import pandas as pd
 from tensorflow.keras.models import load_model
+import joblib
 
 # Load model
-model = load_model("/model/model.keras")
+model = joblib.load ("/model/model.keras")
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
 # Ensure folders
